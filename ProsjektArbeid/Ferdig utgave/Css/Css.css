@@ -1,0 +1,969 @@
+* {
+  box-sizing:border-box
+}
+
+@media screen and (max-width: 641px) {
+
+
+  .aboutuscontainer {
+    font-size:0.4em;
+  }
+
+  .freequestioncontainer {
+    font-size:0.8em;
+    width:100%;
+  }
+
+  .freequestioncontainer .questionleft {
+    display:none;
+  }
+
+  .freequestioncontainer .qform {
+    width:100%;
+    overflow:hidden;  
+  }
+
+  .freequestioncontainer textarea {
+    width:100%;
+  }
+
+  #Lawyerslink {
+    display:none;
+  }
+
+  #Copyright2 {
+    text-align:center;
+    color:grey;
+    margin-top:10%;
+    font-size:10px;
+  }
+
+  footer .footercont, footer .listtwo {
+    display:none;
+  }
+
+  #Copyright {
+    display:inline;
+  }
+
+  .Footer3 {
+   display:none;
+ }
+
+ footer {
+  display:none;
+}
+
+
+.dots {
+  display:none;
+}
+
+.tekstbot {
+  display:none;
+}
+
+.trebilder {
+  display:none;
+}
+
+.tretekst p,  .tretekst a {
+  font-size:16px;
+}
+
+.footercont {
+  display:none;
+}
+.listone {
+  display:none;
+}
+.listtwo {
+  display:none;
+}
+
+.picture1 {
+  height:4%;
+  width: 90%;
+  /* width:173px; */
+  clear:both;
+  margin-top:50px;
+  margin-right:000px;
+}
+
+span.psw {
+ display: block;
+ float: none;
+}
+
+.cancelbtn {
+ width: 100%;
+}
+
+nav {
+  display:none;
+}
+
+.dropdown {
+  list-style:none;
+}
+
+#footertext {
+  display:none;
+}
+
+.sliderimg {
+  height:auto;
+  width:auto;
+}
+
+.prev, .next {
+  display:none;
+}
+
+.Slogan {
+  display:block;
+}
+
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1016px) {
+
+  .aboutuscontainer {
+    font-size:0.8em;
+  }
+
+  .tablet {
+    display:none;
+  }
+
+  #Copyright2 {
+    display:none;
+  }
+
+  .dropdown {
+    list-style:none;
+  }
+
+  .sliderimg {
+    margin-top:80px;
+  }
+
+  .picture1 {
+    display:none;
+  }
+
+  #footertextalt {
+   display:none;
+ }
+
+ .modal-content{
+  width:30%;
+}
+
+nav {
+  display:none;
+}
+.tekstbot {
+  display:none;
+}
+
+.trebilder {
+  display:none;
+}
+
+.tretekst {
+ /* display:none; */
+}
+
+.Footer3 {
+  display:inline;
+  width:100%;
+}
+
+.footercont {
+  display:none;
+}
+.listone {
+  display:none;
+}
+.listtwo {
+  display:none;
+}
+
+.freequestioncontainer textarea {
+  width:100%;
+}
+
+.freequestioncontainer select {
+  width:100%;
+}
+
+
+}
+
+@media screen and (min-width: 1016px) and (max-width: 1200px) {
+  .aboutuscontainer {
+    font-size: 0.8em;
+  }
+
+  .freequestioncontainer textarea {
+    width:100%;
+  }
+
+  .freequestioncontainer select {
+    width:100%;
+  }
+
+
+}
+
+@media screen and (min-width: 1016px) {
+
+ #Copyright2 {
+  display:none;
+}
+
+.dropbtn {
+  display:none;
+}
+
+.picture1 {
+  display:none;
+}
+
+#footertextalt {
+  display:none;
+}
+
+.modal-content{
+  width:30%;
+}
+.sliderimg {
+  margin-top:100px;
+}
+.text {
+  display:none;
+}
+}
+
+/* ------------------ CSS UNDER JQUERY ---------------- */
+
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 4%;
+}
+
+
+
+header {
+  background-color:white;
+  /* background-color: #333333; */
+  height:1%;
+  width:100%;
+  /* margin-bottom:100px; */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 20px;
+}
+
+#navcontainer {     /*fixed navbar som følger når man scroller*/
+  z-index: 99;
+  width: 100%; 
+  top: 0%;
+  background-color: #282828;
+}
+
+.nextandpreviouslawyer .prev,.next {
+  display:none;
+}
+
+
+
+/*--------------------------NAV--------------------------*/
+
+nav {   /* Hele naven, floater til høyre */
+  height:2%;
+
+
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  height: 70px;
+  text-align:center;
+}
+
+nav li {
+  display: inline-block; /* Gjør at teksten blir horizontalt */
+  margin-left: 70px;
+  padding-top: 30px;
+}
+
+nav a {   /* Teksten på navigasjonen */
+  color: #ffffff;
+  text-decoration: none; /* Ta vekk strek under tekst */
+  text-transform: uppercase; /* Gjør tekst til store bokstaver */
+  font-size: 20px;
+
+}
+
+nav a:hover {   /* Endrer farge når du holder ove naven */
+  color: #6bb8ca;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logo {   /* NY */
+  margin-left:auto;
+  margin-right:auto; 
+  display:block;
+  margin-top: -3%;
+  max-width:100%;
+  margin-bottom:2%;
+  background-color: white; 
+}
+
+.aktiv {
+  color: #6bb8ca;
+}
+
+/*--------------------------HOME--------------------------*/
+
+main{
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#main {  /*Box til main content */
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+.slogan{ /*Style and placement for the slogan*/
+  color: #ffffff;
+  margin-left: 5%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.question{ /*Temporary placement for questions*/
+  width: 15%;
+  background-color: #333333;
+  margin-top: 15%;
+  margin-left:5%;
+  margin-bottom: 10%;
+  float: left;
+  border-radius: 25px;
+  border: solid #ffffff;
+  position: absolute;
+}
+
+#info {  /* Box til info */
+  width: 54%;
+  height: 400px;
+  background-color: #6bb8ca;
+  float: left;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.infotxt{ /* Text for info box */
+  text-align: center;
+  margin-top: 4%;
+  color: #ffffff;
+}
+
+
+/*--------------------------QUESTION PAGE--------------------------*/
+.qform {
+  padding: 2%;
+  margin-left: 0%;
+  margin-bottom: 6%;
+  margin-top: 6%;
+  width: 30%;
+  background-color: #b3e1ef;
+  color: #525252;
+  float: left;
+}
+
+.questionleft {
+  margin-left: 1.5%;
+  margin-top: 6%;
+  width: 68.5%;
+  height: 633px;
+  background-color: #b3e1ef;
+  float: left;
+}
+
+.qH1 {
+  text-align: center;
+  color: #525252;
+  font-weight: 100;
+}
+
+.qtxt {
+  text-align: center;
+  color: #525252;
+}
+
+.questionpic {
+  position: relative;
+  margin-right: 0%; 
+  margin-bottom: -4%;  
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------LOGIN------------------------------ */
+
+input[type=text], input[type=password] {  /* Full-width input fields */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button { /* Set a style for all buttons */
+  background-color: #6bb8ca;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn { /* Extra styles for the cancel button */
+  width: auto;
+  padding: 10px 18px;
+  margin-left: 10px;
+  background-color: #f44336;
+}
+
+.imgcontainer { /* Center the image and position the close button */
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  margin-right: 10px;
+  padding-top: 16px;
+}
+
+.modal {  /* The Modal (background) */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content { /* Modal Content/Box */
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  margin-top:100px;
+}
+
+.close { /* The Close Button (x) */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate { /* Add Zoom Animation */
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+.wrapperwhite {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+/*--------------------------FORGOTTEN PASSWORD PAGE --------------------------*/
+
+.fform { /*class for form in forgotten passwords page*/
+  background-color: #333333;
+  border: solid black;
+  color: white;
+  position: absolute;
+  top:30%;
+  left:40%;
+  width:300px;
+}
+
+#forgottenpassword {
+  position: absolute;
+  top:30%;
+  left:40%;
+}
+
+hr {  /* Style the horizontal ruler */
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+} 
+
+/*--------------------------PICTURE SLIDER--------------------------*/
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative; 
+  height: auto;
+}
+
+.sliderimg {
+  width: 100%;
+  height: auto;
+  border-width:2px;
+  margin:0px;
+  border-color:black;
+  border-style:solid;
+}
+
+.mySlides { /* Hide the images by default */
+  display: none;    
+}
+
+.prev, .next {  /* Next & previous buttons */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  margin-left: 35px;
+}
+
+.next { /* Position the "next button" to the right */
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover { /* On hover, add a black background color with a little bit see-through */
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text { /* Caption text */
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext { /* Number text (1/3 etc) */
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  text-align:center; 
+  margin-right:100px;
+}
+
+.dot {  /* The dots/bullets/indicators */
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top:20px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade { /* Fading animation */
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* -------------------- DROPDOWN MENU -------------------------- */ 
+
+.dropbtn { /* Dropdown Button */
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus { /* Dropdown button on hover & focus */
+  background-color: #2980B9;
+}
+
+.dropdown { /* The container <div> - needed to position the dropdown content */
+  position: relative;
+  display: inline-block;
+  z-index:10000;
+}
+
+.dropdown-content { /* Dropdown Content (Hidden by Default) */
+  display: none;
+  position: absolute;
+  background-color:lightblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100000;
+}
+
+.dropdown-content a { /* Links inside the dropdown */
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 100000;
+}
+
+.dropdown-content a:hover {background-color: #ddd} /* Change color of dropdown links on hover */
+
+.show { /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  display:block;
+  z-index: 10000;
+}
+
+/*-----------------------Sign up posisjonering------------*    NY */ 
+.signup {
+  left: 30%;
+  top:40%;
+  position: absolute;
+  display:block;
+}
+/*-----------------------Bilder og tekst under slider-----------------   NY */
+.tekstbilde {
+  display:block; 
+  height:550px;
+  width:100%;
+  margin:auto;
+}
+
+
+.tekstbot {
+  color:grey;
+}
+
+.trebilder {
+  width:50%;
+  height:250px;
+  display:block; 
+  margin:auto;
+  
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+
+}
+
+.tretekst3 {
+  color:lightblue;
+  text-align:center;
+  font-size:35px;
+  margin-top:5%; 
+  font-size:40px;
+  color:lightblue;
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  margin-bottom:8%;
+  margin-top:8%;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  box-shadow: 0.1px 0.8px 0.1px 0.8px lightgrey;
+}
+
+.tretekst3:hover {
+  background-color:lightblue;
+  color:white;
+}
+
+/*--------------------AboutUs---------------  NY  */
+.mission {
+ width: 100%;
+ height: 300px;
+ background-color: #b3e1ef; 
+}
+
+.aboutH1 {
+  text-align: center;
+  color: #525252;
+  padding-top: 4%;
+  font-weight: 100;
+}
+
+.missionTxt {
+  text-align: center;
+  color: #525252;
+}
+
+.aboutus {
+ width: 100%;
+ height: 300px;
+ background-color: #b3e1ef; 
+}
+
+.aboutTxt {
+  color: #525252;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.5; 
+}
+
+.ourvision {
+ width: 100%;
+ height: 210px;
+ background-color: #b3e1ef; 
+}
+
+.aboutpic {
+  position: relative;
+  margin-right: 0%;   
+  width: 100%;
+  height: auto;
+
+}
+
+.Slogan.lawyers {
+  padding:3%;
+}
+
+
+/*--------------------Footer---------------  NY  */
+
+footer {
+  border-top: grey solid 1px;
+  position: relative;  
+  clear:both;
+  background-color: #282828;
+  width:100%;
+  height:395px;
+  margin-top:16%; 
+}
+.listone{
+  list-style-type:none;
+  color:grey; 
+  margin-left: 3%;
+  float:left;
+  margin-top:20px;
+  display:block;
+}
+
+.listone a{
+  list-style-type:none;
+  color:#bababa; 
+  text-decoration:none;
+}
+
+.listone li a:hover{
+  color:lightblue;
+}
+
+.listone li {
+  color:#bababa;
+}
+
+.listtwo{
+  list-style-type: none;
+  margin-left: 10%;
+  float:left;
+  border-right: 2px solid grey;
+  padding-right:10%;
+  margin-top:20px;
+}
+
+.listtwo li {
+  color:#bababa;
+}
+
+.listtwo{
+  color:grey;
+}
+
+}
+.listone {
+  color:#525252;
+}
+
+.Footer3 {
+  margin-top: 20px;
+  float:left;
+  margin-left: 3%;
+  width:30%;
+}
+
+.Footer3 p {
+  color:grey;
+  font-size: 20px;
+}
+
+.Signup {
+  width:30%;
+  height:50px;
+  float:rigth;
+  color:lightblue;
+  background-color:grey;
+  border-radius:5%;
+}
+
+.Footer3 input  {
+  background-color:grey;
+  border-style:none;
+  width:50%;
+  height:50px;
+  border-radius: 5%;
+  color:white;
+}
+
+hr {
+  clear:both;
+  height:0px;
+  width:98%;
+  color:grey;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: grey;
+  color: white;
+}
+
+.fa-linkedin {
+  background: grey;
+  color: white;
+}
+
+.fa-twitter {
+  background: grey;
+  color: white;
+}
+
+.fa-pinterest {
+  background: grey;
+  color: white;
+}
+
+.fa-rss {
+  background: grey;
+  color: white;
+}
+
+#Copyright {
+  margin-left:38%;
+  color:grey;
+  bottom: -2.5%;
+  position: absolute;
+}
+
+.Slogan {
+  font-size:40px;
+  color:white;
+  background-color:lightblue;
+  text-align:center;
+  margin-bottom:8%;
+  margin-top:8%;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  box-shadow: 0.1px 0.8px 0.1px 0.8px lightgrey;
+}
